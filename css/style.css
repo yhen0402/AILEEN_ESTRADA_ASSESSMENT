@@ -1,0 +1,117 @@
+/* 1. global config 
+
+    - all margins and paddings set to 0
+*/
+
+/* 2. global style
+    
+    - set all default font family Noto Sans which you can get at google fonts
+    - set all the the line spacing to 1.4
+    - remove all anchor tag underline
+    - set a default margin for all paragraphs to 0.75 for top and bottom and 0 to left and right
+
+*/
+
+/* 3. settings
+
+    - create a rule where you can control the maximum width of your content
+    while adapting to browser widths
+    - create a rule to center all contents under this setting
+    - create a rule to set all elements inside of this setting to have
+    a "space inside" with a "0" from top and bottom and 32px using the "rem" units
+    in left and right
+    - and lastly set a rule on overflowing elements inside to hidden.
+
+*/
+
+/* 
+    4.  Collaborative Task for Assessment
+
+    4.1  Your goal is to apply pertinent rules to produce same result(output)
+    as what the figure displays in assessment_output.png.
+
+    Color Values
+    - #f8e2cf
+    - #ff7600
+    - #fdf6f0
+    - #333
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans&family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Noto+Sans&family=Roboto:wght@100;300&display=swap");
+/* 1. global configuration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. global style */
+
+html,
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.4em;
+  text-decoration: none;
+  margin: 0.75px 0;
+  background-color: #fdf6f0;
+}
+
+/* 3. settings */
+section {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 2rem 2rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 4. Collaborative Task for Assessment */
+.title h2 {
+  color: #ff7600;
+  font-size: 40px;
+  padding-left: 30px;
+}
+.title h2 span {
+  color: black;
+}
+.icon-section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.icon-section i {
+  line-height: 2em;
+  float: left;
+  width: 80px;
+  height: 70px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #f8e2cf;
+  color: #333;
+  margin-top: 10px;
+}
+.icon-section h3 {
+  font-size: 19px;
+  padding-bottom: 14px;
+}
+.icon-section .container {
+  flex: 1;
+  margin: 10px 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.icon-section .container .content {
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  padding-left: 110px;
+}
+.icon-section .container .content p {
+  font-size: 17px;
+}
